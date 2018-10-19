@@ -1,5 +1,6 @@
 import pandas as pd
 
+
 def init_board(board_size, starting_point):
     board = []
     for i in range(0, board_size[0]):
@@ -12,8 +13,10 @@ def init_board(board_size, starting_point):
         board.append(row)
     return board
 
+
 def display_board(board):
     print(pd.DataFrame(board))
+
 
 def valid_moves(board, knight_pos):
     moves_list = [(-1, 2), (1, 2), (2, 1), (2, -1), (1, -2), (-1, -2), (-2, -1), (-2, 1)]
@@ -27,6 +30,7 @@ def valid_moves(board, knight_pos):
                 and board[next_row][next_col] == '0'):
             next_moves.append((next_row, next_col))
     return next_moves
+
 
 def move(board, knight_pos, next_moves, move_count):
     moves_list = [(-1, 2), (1, 2), (2, 1), (2, -1), (1, -2), (-1, -2), (-2, -1), (-2, 1)]
@@ -61,4 +65,4 @@ def knights_tour(board_size, starting_point):
     display_board(board)
 
 
-knights_tour((5,4), (0,0))
+knights_tour((5, 4), (0, 0))
