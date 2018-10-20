@@ -32,3 +32,5 @@ def coin_change(denominations, money):
 denominations = [1, 5, 8, 10]
 money = 16
 coin_change(denominations, money)
+
+# time complexity: O(n) where n denotes money

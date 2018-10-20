@@ -18,3 +18,5 @@ def selection_sort(sequence):
 
 sequence = [5, 8, 3, 7, 1, 9, 11, 4, 2]
 selection_sort(sequence)
+
+# time complexity: O(n^2)

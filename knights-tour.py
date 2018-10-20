@@ -65,4 +65,9 @@ def knights_tour(board_size, starting_point):
     display_board(board)
 
 
-knights_tour((5, 4), (0, 0))
+board_size = (6, 6)
+starting_point = (2, 1)
+knights_tour(board_size, starting_point)
+
+# time complexity: O(n) where n is denoted as the size of the chessboard
+# that is r * c where r is the number of rows and c is the number of columns

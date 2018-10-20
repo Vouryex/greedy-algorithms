@@ -39,3 +39,7 @@ def set_cover(universal_set, set_of_sets):
 universal_set = [1, 2, 3, 4, 5, 6, 7, 8]
 set_of_sets = [[1, 2], [7, 8], [2, 3, 4, 5, 6, 7], [1, 2, 3, 4], [5, 6, 7, 8], [5, 6, 7]]
 set_cover(universal_set, set_of_sets)
+
+# time complexity: O(Σ of all S ∈ F: |S|) where F is a family of subsets of X,
+# such that every element of X belongs to at least one subset in F, where X is
+# a finite set referred to as the universal set
